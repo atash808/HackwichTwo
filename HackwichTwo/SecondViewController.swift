@@ -2,13 +2,15 @@
 //  SecondViewController.swift
 //  HackwichTwo
 //
-//  Created by Flynn Porter on 9/22/22.
+//  Created by Atash Imanverdi on 9/22/22.
 //
 
 import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet var firstLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,9 +23,14 @@ class SecondViewController: UIViewController {
         
     //when button is pressed we want to change the background color of the view to blue
     self.view.backgroundColor = UIColor.blue
-    
+    firstLabel.text = "I created my first label and changed the text color to green"
+    firstLabel.textUIColor.green
     }
 
+
+}
+
+    
     /*
     // MARK: - Navigation
 
